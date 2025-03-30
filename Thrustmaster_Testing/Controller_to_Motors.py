@@ -14,5 +14,5 @@ while True:
    # if not line:
     #    break  # process ended
     # Process the output from Gamepad.py
-    print("Controller output:", line.strip())
+    print(line.strip())
     # You can add your logic here to generate other outputs based on the line

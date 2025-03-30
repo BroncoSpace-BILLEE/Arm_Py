@@ -22,20 +22,27 @@ while True:
     joystick_output = process.stdout.readline()
      # Process the output from Gamepad.py
 
-    joystick_output = joystick_output.strip()
-    #print(joystick_output.strip())
+print("Joystick output:", repr(joystick_output))
 
-    if len(events) == 3:
-        button_type, button_name, value = events
-        try:
-            print(value)
-        except ValueError:
-    print("Could not convert value to float:", value)
+# Split the string into parts
+events = joystick_output.split(", ")
+
+# Debug: print the resulting list
+print("Events list:", events)
+
+# Check if we have exactly 3 parts before unpacking
+if len(events) == 3:
+    button_type, button_name, value = events
+    try:
+        value = float(value)
+    except ValueError:
+        print("Could not convert value to float:", value)
     print("Button Type:", button_type)
     print("Button Name:", button_name)
     print("Value:", value)
-    else:
-        print("Unexpected format. Expected 3 elements but got:", len(events))
+else:
+    print("Unexpected format. Expected 3 elements but got:", len(events))
+    
     
 
 #while True:

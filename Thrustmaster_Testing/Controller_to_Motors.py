@@ -29,7 +29,7 @@ while True:
         button_type, button_name, value = events
         try:
             value = float(value)
-            except ValueError:
+        except ValueError:
     print("Could not convert value to float:", value)
     print("Button Type:", button_type)
     print("Button Name:", button_name)

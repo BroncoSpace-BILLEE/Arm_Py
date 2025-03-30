@@ -597,7 +597,7 @@ if __name__ == "__main__":
 
     # Pick the correct class
     if device in controllerDict:
-        print(controllerDict[device].fullName)
+        #print(controllerDict[device].fullName)
         gamepad = controllerDict[device]()
     elif device == '':
         print('Unspecified gamepad')

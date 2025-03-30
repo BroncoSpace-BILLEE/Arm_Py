@@ -26,16 +26,16 @@ while True:
     #print(joystick_output.strip())
 
     if len(events) == 3:
-    button_type, button_name, value = events
-    try:
-        value = float(value)
-    except ValueError:
-        print("Could not convert value to float:", value)
+        button_type, button_name, value = events
+        try:
+            value = float(value)
+            except ValueError:
+    print("Could not convert value to float:", value)
     print("Button Type:", button_type)
     print("Button Name:", button_name)
     print("Value:", value)
-else:
-    print("Unexpected format. Expected 3 elements but got:", len(events))
+    else:
+        print("Unexpected format. Expected 3 elements but got:", len(events))
     
 
 #while True:

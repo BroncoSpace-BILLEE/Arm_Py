@@ -375,17 +375,17 @@ class T16000M(Gamepad):
         Gamepad.__init__(self, joystickNumber)
         self.axisNames = {
             0: 'AXIS0',
-            1: 'AXIS1',
-            2: 'AXIS2',
-            3: 'AXIS3'
+            1: '2ND_AXIS', # 0 to -1 is forward, 0 to 1 is backward 
+            2: '1ST_AXIS', # 0 to -1 is left, 0 to 1 is right
+            3: 'AXIS_SPEED'# 0 to -1 is down, 0 to 1 is up
         }
         self.buttonNames = {
-            0: 'BUTTON0',
-            1: 'BUTTON1',
-            2: 'BUTTON2',
-            3: 'BUTTON3',
-            4: 'BUTTON4',
-            5: 'BUTTON5',
+            0: 'GRIPPER_OPEN', 
+            1: 'GRIPPER_CLOSE',
+            2: '3RDAXIS_DOWN',
+            3: '3RDAXIS_UP',
+            4: '4THAXIS_LEFT',
+            5: '4THAXIS_RIGHT',
             6: 'BUTTON6',
             7: 'BUTTON7',
             8: 'BUTTON8',

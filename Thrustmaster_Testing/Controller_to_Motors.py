@@ -22,7 +22,7 @@ while True:
     joystick_output = process.stdout.readline()
      # Process the output from Gamepad.py
 
-print("Joystick output:", repr(joystick_output))
+    print("Joystick output:", repr(joystick_output))
 
 
     

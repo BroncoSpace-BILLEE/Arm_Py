@@ -582,7 +582,7 @@ if __name__ == "__main__":
     #print('Available device names:')
     formatString = '    ' + GREEN + '%s' + RESET + ' - ' + CYAN + '%s' + RESET
     for device in deviceNames:
-        print(formatString % (device, controllerDict[device.upper()].fullName))
+        #print(formatString % (device, controllerDict[device.upper()].fullName))
     #print('')
     #print('What device name are you using (leave blank if not in the list)')
     device = 'T16000M'
@@ -593,7 +593,7 @@ if __name__ == "__main__":
         print('Please connect your gamepad...')
         while not available():
             time.sleep(1.0)
-    print('Gamepad connected')
+    #print('Gamepad connected')
 
     # Pick the correct class
     if device in controllerDict:

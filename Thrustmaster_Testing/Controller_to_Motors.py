@@ -1,18 +1,28 @@
 import subprocess
 
 # Start Gamepad.py as a subprocess
-process = subprocess.Popen(
+process = subprocess.Popen( #
     ["python3", "-u", "Gamepad.py"], #run the subprocess with python 3, -u means unbuffered so we get instant output, the program to run is Gamepad.py
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
     text=True  # so that output is decoded as text
+    
+    #stdout=subprocess.PIPE: This tells Python to capture the standard output (stdout) of the subprocess. 
+    #Instead of letting the output go directly to the terminal or console, 
+    #it creates a pipe so your main program can read the output programmatically (e.g., using process.stdout.readline()).
+
+    #stderr=subprocess.PIPE: Similarly, this captures the standard error (stderr) output of the subprocess. 
+    #Any error messages or diagnostics that would normally be printed to the console are instead captured in a pipe, 
+    #which allows your program to process or log them as needed.
+    
 )
 
 # Read output continuously
 while True:
-    line = process.stdout.readline()
-   # if not line:
-    #    break  # process ended
-    # Process the output from Gamepad.py
-    print(line.strip())
-    # You can add your logic here to generate other outputs based on the line
+    joystick_output = process.stdout.readline()
+     # Process the output from Gamepad.py
+    print(joystick_output.strip())
+
+while True:
+    if 
+    

@@ -1,20 +1,18 @@
 import subprocess
-import threading
 
-def read_output(proc):
-    for line in proc.stdout:
-        print(f"Captured: {line.strip()}")  # You can store it too
+# Start Gamepad.py as a subprocess
+process = subprocess.Popen(
+    ["python", "Gamepad.py"],
+    stdout=subprocess.PIPE,
+    stderr=subprocess.PIPE,
+    text=True  # so that output is decoded as text
+)
 
-# Launch the other program
-proc = subprocess.Popen(['./Gamepad.py'], stdout=subprocess.PIPE, text=True)
-
-# Start reading in a separate thread
-thread = threading.Thread(target=read_output, args=(proc,))
-thread.start()
-
-# Your main script can now run in parallel
+# Read output continuously
 while True:
-    # Do your thing here
-    print("Main script running...")
-    print(read_output)
-    time.sleep(1)
+    line = process.stdout.readline()
+    if not line:
+        break  # process ended
+    # Process the output from Gamepad.py
+    print("Controller output:", line.strip())
+    # You can add your logic here to generate other outputs based on the line

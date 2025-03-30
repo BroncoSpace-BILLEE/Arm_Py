@@ -360,3 +360,45 @@ class example(Gamepad):
             2: 'BUTTON2'
         }
         self._setupReverseMaps()
+
+class T16000M(T16000M_Joystick):
+    # This class must have self.axisNames with a map
+    # of numbers to capitalised strings. Follow the
+    # conventions the other classes use for generic
+    # axes, make up your own names for axes unique
+    # to your device.
+    # self.buttonNames needs the same treatment.
+    # Use python Gamepad.py to get the event mappings.
+    fullName = 'T16000M_Joystick'
+
+    def __init__(self, joystickNumber = 0):
+        Gamepad.__init__(self, joystickNumber)
+        self.axisNames = {
+            0: 'AXIS0',
+            1: 'AXIS1',
+            2: 'AXIS2',
+            3: 'AXIS3'
+        }
+        self.buttonNames = {
+            0: 'BUTTON0',
+            1: 'BUTTON1',
+            2: 'BUTTON2',
+            3: 'BUTTON3',
+            4: 'BUTTON4',
+            5: 'BUTTON5',
+            6: 'BUTTON6',
+            7: 'BUTTON7',
+            8: 'BUTTON8',
+            9: 'BUTTON9',
+            10: 'BUTTON10',
+            11: 'BUTTON11',
+            12: 'BUTTON12',
+            13: 'BUTTON13',
+            14: 'BUTTON14',
+            15: 'BUTTON15',
+
+
+
+
+        }
+        self._setupReverseMaps()

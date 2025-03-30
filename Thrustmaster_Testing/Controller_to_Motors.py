@@ -23,6 +23,8 @@ while True:
      # Process the output from Gamepad.py
     print(joystick_output.strip())
 
-while True:
-    if 
+#while True:
+#    def switch_motor_select(joystick_output):
+#       match joystick_output:
+#           case 
     

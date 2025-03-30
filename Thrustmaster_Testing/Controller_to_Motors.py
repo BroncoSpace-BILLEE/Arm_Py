@@ -2,7 +2,7 @@ import subprocess
 
 # Start Gamepad.py as a subprocess
 process = subprocess.Popen(
-    ["python3", "Gamepad.py"],
+    ["python3", "-u", "Gamepad.py"], #run the subprocess with python 3, -u means unbuffered so we get instant output, the program to run is Gamepad.py
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
     text=True  # so that output is decoded as text

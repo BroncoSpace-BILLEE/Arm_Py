@@ -30,9 +30,9 @@ while True:
     #button_type, button_name, value = events
     #value = float(value)
 
-    print(button_type)
-    print(button_name)
-    print(value)
+    #print(button_type)
+    #print(button_name)
+    #print(value)
 
     
 

@@ -21,16 +21,16 @@ process = subprocess.Popen( #
 while True:
     joystick_output = process.stdout.readline()
      # Process the output from Gamepad.py
-    print(joystick_output.strip())
+    #print(joystick_output.strip())
 
-#create a list called events, and use the comma to delimit the values so we can have AXIS/BUTTON, TYPE, VALUE
-events = joystick_output_str.split(",")
-events = [events.strip() for event in events] #in the list events, break each element into its own event forming part of the list 'events'
-button_type, button_name, value = events
-value = float(events)
-print(button_type)
-print(button_name)
-print(value)
+    #create a list called events, and use the comma to delimit the values so we can have AXIS/BUTTON, TYPE, VALUE
+    events = joystick_output_str.split(",")
+    events = [events.strip() for event in events] #in the list events, break each element into its own event forming part of the list 'events'
+    button_type, button_name, value = events
+    value = float(events)
+    #print(button_type)
+    print(button_name)
+    print(value)
 
     
 

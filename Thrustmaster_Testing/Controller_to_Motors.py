@@ -22,13 +22,8 @@ while True:
     joystick_output = process.stdout.readline()
     joystick_output = joystick_output.strip() 
      # Process the output from Gamepad.py and reassign it to itself with no newline or spaces
-
-    print("Joystick output:", repr(joystick_output))
-        # Split the string into parts
+     
     events = joystick_output.split(", ")
-
-    # Debug: print the resulting list
-    print("Events list:", events)
 
     # Check if we have exactly 3 parts before unpacking
     if len(events) == 3:

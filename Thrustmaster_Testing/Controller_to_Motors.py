@@ -28,7 +28,7 @@ while True:
     if len(events) == 3:
         button_type, button_name, value = events
         try:
-            value = float(value)
+            value = int(value)
         except ValueError:
     print("Could not convert value to float:", value)
     print("Button Type:", button_type)

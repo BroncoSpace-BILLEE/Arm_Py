@@ -33,10 +33,7 @@ print("Events list:", events)
 # Check if we have exactly 3 parts before unpacking
 if len(events) == 3:
     button_type, button_name, value = events
-    try:
-        value = float(value)
-    except ValueError:
-        print("Could not convert value to float:", value)
+    print("Could not convert value to float:", value)
     print("Button Type:", button_type)
     print("Button Name:", button_name)
     print("Value:", value)

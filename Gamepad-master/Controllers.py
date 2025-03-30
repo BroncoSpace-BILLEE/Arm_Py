@@ -378,11 +378,12 @@ class T16000M(Gamepad):
             1: '2ND_AXIS', # 0 to -1 is forward, 0 to 1 is backward 
             2: '1ST_AXIS', # 0 to -1 is left, 0 to 1 is right
             3: 'AXIS_SPEED',# 0 to -1 is down, 0 to 1 is up
-            4: '4TH_5TH_AXIS' #
+            4: '4TH_AXIS', # -1 is left, 0 is no movement, 1 is right
+            5: '5TH_AXIS' # -1 is up, 0 is no movement, 1 is down
         }
         self.buttonNames = {
             0: 'GRIPPER_CLOSE', 
-            1: 'GRIPPER_UP',
+            1: 'GRIPPER_OPEN',
             2: '3RDAXIS_DOWN',
             3: '3RDAXIS_UP',
             4: 'BUTTON4',

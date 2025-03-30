@@ -27,7 +27,7 @@ while True:
     events = joystick_output.split(", ") #generate a list called events, and split into parts divided by commas
     events = [event.strip() for event in events] #in the list events, break each element into its own event forming part of the list 'events'
     button_type, button_name, value = events
-    value = float(events)
+    value = float(value)
     #print(button_type)
     print(button_name)
     print(value)

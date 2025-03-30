@@ -570,17 +570,17 @@ if __name__ == "__main__":
         pass
 
     # ANSI colour code sequences
-    GREEN = '\033[0;32m'
-    CYAN = '\033[0;36m'
-    BLUE = '\033[1;34m'
-    RESET = '\033[0m'
+    #GREEN = '\033[0;32m'
+    #CYAN = '\033[0;36m'
+    #BLUE = '\033[1;34m'
+    #RESET = '\033[0m'
 
     # Ask for the gamepad to use
     #print('Gamepad axis and button events...')
     #print('Press CTRL+C to exit')
     #print('')
     #print('Available device names:')
-    formatString = '    ' + GREEN + '%s' + RESET + ' - ' + CYAN + '%s' + RESET
+    formatString = '    ' + '%s' +  ' - ' + '%s'
     for device in deviceNames:
         #print(formatString % (device, controllerDict[device.upper()].fullName))
     #print('')

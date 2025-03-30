@@ -576,15 +576,15 @@ if __name__ == "__main__":
     RESET = '\033[0m'
 
     # Ask for the gamepad to use
-    print('Gamepad axis and button events...')
-    print('Press CTRL+C to exit')
-    print('')
-    print('Available device names:')
+    #print('Gamepad axis and button events...')
+    #print('Press CTRL+C to exit')
+    #print('')
+    #print('Available device names:')
     formatString = '    ' + GREEN + '%s' + RESET + ' - ' + CYAN + '%s' + RESET
     for device in deviceNames:
-        print(formatString % (device, controllerDict[device.upper()].fullName))
-    print('')
-    print('What device name are you using (leave blank if not in the list)')
+        #print(formatString % (device, controllerDict[device.upper()].fullName))
+    #print('')
+    #print('What device name are you using (leave blank if not in the list)')
     device = 'T16000M'
     print(RESET)
 

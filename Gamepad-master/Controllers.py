@@ -386,18 +386,6 @@ class T16000M(Gamepad):
             1: 'GRIPPER_OPEN',
             2: '3RDAXIS_DOWN',
             3: '3RDAXIS_UP',
-            4: 'BUTTON4',
-            5: 'BUTTON5',
-            6: 'BUTTON6',
-            7: 'BUTTON7',
-            8: 'BUTTON8',
-            9: 'BUTTON9',
-            10: 'BUTTON10',
-            11: 'BUTTON11',
-            12: 'BUTTON12',
-            13: 'BUTTON13',
-            14: 'BUTTON14',
-            15: 'BUTTON15',
 
 
 

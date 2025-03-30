@@ -24,21 +24,7 @@ while True:
 
 print("Joystick output:", repr(joystick_output))
 
-# Split the string into parts
-events = joystick_output.split(", ")
 
-# Debug: print the resulting list
-print("Events list:", events)
-
-# Check if we have exactly 3 parts before unpacking
-if len(events) == 3:
-    button_type, button_name, value = events
-    print("Could not convert value to float:", value)
-    print("Button Type:", button_type)
-    print("Button Name:", button_name)
-    print("Value:", value)
-else:
-    print("Unexpected format. Expected 3 elements but got:", len(events))
     
     
 

@@ -361,7 +361,7 @@ class example(Gamepad):
         }
         self._setupReverseMaps()
 
-class T16000M(T16000M_Joystick):
+class T16000M(Gamepad):
     # This class must have self.axisNames with a map
     # of numbers to capitalised strings. Follow the
     # conventions the other classes use for generic

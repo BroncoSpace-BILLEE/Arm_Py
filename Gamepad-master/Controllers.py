@@ -377,7 +377,7 @@ class T16000M(Gamepad):
             0: 'AXIS0',
             1: '2ND_AXIS', # 0 to -1 is forward, 0 to 1 is backward 
             2: '1ST_AXIS', # 0 to -1 is left, 0 to 1 is right
-            3: 'AXIS_SPEED'# 0 to -1 is down, 0 to 1 is up
+            3: 'AXIS_SPEED',# 0 to -1 is down, 0 to 1 is up
             4: '4TH_5TH_AXIS' #
         }
         self.buttonNames = {

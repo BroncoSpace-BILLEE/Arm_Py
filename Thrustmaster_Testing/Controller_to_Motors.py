@@ -25,16 +25,17 @@ while True:
     joystick_output = joystick_output.strip()
     #print(joystick_output.strip())
 
-    #create a list called events, and use the comma to delimit the values so we can have AXIS/BUTTON, TYPE, VALUE
-    events = joystick_output.split(",") #generate a list called events, and split into parts divided by commas
-    events = [event.strip() for event in events] #in the list events, break each element into its own event forming part of the list 'events'
+    if len(events) == 3:
     button_type, button_name, value = events
-    value = float(value)
-
-    print(button_type)
-    print(button_name)
-    print(value)
-
+    try:
+        value = float(value)
+    except ValueError:
+        print("Could not convert value to float:", value)
+    print("Button Type:", button_type)
+    print("Button Name:", button_name)
+    print("Value:", value)
+else:
+    print("Unexpected format. Expected 3 elements but got:", len(events))
     
 
 #while True:

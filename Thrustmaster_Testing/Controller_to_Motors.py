@@ -24,7 +24,7 @@ while True:
     #print(joystick_output.strip())
 
     #create a list called events, and use the comma to delimit the values so we can have AXIS/BUTTON, TYPE, VALUE
-    events = joystick_output_str.split(",")
+    events = joystick_output.split(",")
     events = [events.strip() for event in events] #in the list events, break each element into its own event forming part of the list 'events'
     button_type, button_name, value = events
     value = float(events)

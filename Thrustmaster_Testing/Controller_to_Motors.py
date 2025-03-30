@@ -28,7 +28,7 @@ while True:
     # Check if we have exactly 3 parts before unpacking
     if len(events) == 3:
         button_type, button_name, value = events
-        print(button_type + ", " + button_name ", " + value + "\n")
+        print(button_type + ", " + button_name + ", " + value + "\n")
         
     
     

@@ -585,7 +585,7 @@ if __name__ == "__main__":
         print(formatString % (device, controllerDict[device.upper()].fullName))
     print('')
     print('What device name are you using (leave blank if not in the list)')
-    device = input('? ' + GREEN).strip().upper()
+    device = 'T16000M'
     print(RESET)
 
     # Wait for a connection

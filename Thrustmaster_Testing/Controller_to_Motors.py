@@ -23,7 +23,7 @@ while True:
      # Process the output from Gamepad.py
 
     joystick_outout = joystick_output.strip()
-    print(joystick_output)
+    print(joystick_output.strip())
 
     #create a list called events, and use the comma to delimit the values so we can have AXIS/BUTTON, TYPE, VALUE
     #events = joystick_output.split(", ") #generate a list called events, and split into parts divided by commas

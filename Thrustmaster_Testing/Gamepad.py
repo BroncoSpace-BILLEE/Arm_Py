@@ -573,7 +573,7 @@ if __name__ == "__main__":
     #GREEN = '\033[0;32m'
     #CYAN = '\033[0;36m'
     #BLUE = '\033[1;34m'
-    #RESET = '\033[0m'
+    RESET = '\033[0m'
 
     # Ask for the gamepad to use
     #print('Gamepad axis and button events...')

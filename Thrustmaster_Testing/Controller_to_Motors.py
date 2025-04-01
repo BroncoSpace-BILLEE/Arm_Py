@@ -26,7 +26,7 @@ while True:
     events = joystick_output.split(", ")
 
     # Check if we have exactly 3 parts before unpacking
-    if len(events) == 3:
+    if len(events) == 3: #Do not delete. will fuck you over for data
         button_type, button_name, value = events
         print(button_type + ", " + button_name + ", " + value + "\n")
         
